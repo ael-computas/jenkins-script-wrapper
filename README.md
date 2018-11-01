@@ -8,6 +8,21 @@ separate them.
 This wrapper makes it possible to give a name to the step.
 It also supports returnStdout: true and returnStatus: true
 
+## Note
+You probably want to fork this repo, instead of using this one directly.  
+
+## Install Library
+1. Go to Jenkins: Configuration
+2. Go to section "Global Pipeline Libraries"
+  1. Fill inn any name (in the example below i called it "utils")
+  2. Version: "master"
+  3. "modern scm"
+  4. Source code managment: Github
+    1. credentials: your credentials
+    2. owner: ael-computas (or your fork)
+    3. Repo: jenkins-script-wrapper (or your fork)
+3. Create a pipeline job and paste in the script below.
+
 ## Example usage
 ```groovy
 @Library('utils') _
